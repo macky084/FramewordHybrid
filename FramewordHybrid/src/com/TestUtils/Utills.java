@@ -20,6 +20,7 @@ public class Utills {
 	public static WebDriver driver;
 	
 	/**
+	 * New comments
 	 * This method initialize browser object
 	 * @param browser
 	 * @return browser driver
