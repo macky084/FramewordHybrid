@@ -20,7 +20,7 @@ public class Utills {
 	public static WebDriver driver;
 	
 	/**
-	 * New comments
+	 * New comments is added to check the GIt functionality
 	 * This method initialize browser object
 	 * @param browser
 	 * @return browser driver
