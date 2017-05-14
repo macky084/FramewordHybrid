@@ -26,6 +26,7 @@ public class TestBase extends Utills{
 		selectBrowser(Repository.getProperty("browser"));
 		impliciteWait(30);
 		driver.get(Repository.getProperty("url"));
+		
 	}
 	
 	

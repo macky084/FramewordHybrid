@@ -17,6 +17,7 @@ public class TestLogin1 extends TestBase{
 	@BeforeClass
 	public void setUp() throws IOException{
 		init();
+		
 	}
 	
 	@Test
