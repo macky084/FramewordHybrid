@@ -13,7 +13,7 @@ import java.io.*;
 import java.util.Calendar;
 
 public class Xls_Reader {
-	//public static String filename = System.getProperty("user.dir")+"\\src\\config\\testcases\\TestData.xlsx";
+	public static String filename = System.getProperty("user.dir")+"\\src\\com\\TestData\\actiLogin.xlsx";
 	public String path;
 	public FileInputStream fis = null;
 	public FileOutputStream fileOut = null;

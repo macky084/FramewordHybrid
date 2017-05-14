@@ -33,7 +33,7 @@ public class Listener extends Utills implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		if (!result.isSuccess()) {
 			String userDirector = System.getProperty("user.dir");
-			String customeLocation = "\\src\\com\\actiTime\\screenShot\\";
+			String customeLocation = "\\src\\com\\screenShot\\";
 			String failureImageFileName = userDirector+customeLocation+new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime())+"-"+result.getMethod().getMethodName()+ ".png";
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			try {

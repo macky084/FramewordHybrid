@@ -30,23 +30,23 @@ public class TestBase extends Utills{
 	
 	
 	public void loadPropertiesFile() throws IOException {
-		f = new File(System.getProperty("user.dir")+"\\src\\com\\actiTime\\config\\config.properties");
+		f = new File(System.getProperty("user.dir")+"\\src\\com\\config\\config.properties");
 		FI = new FileInputStream(f);
 		Repository.load(FI);
 		
-		f = new File(System.getProperty("user.dir")+"\\src\\com\\actiTime\\pageLocators\\loginpage.properties");
+		f = new File(System.getProperty("user.dir")+"\\src\\com\\PageLocators\\loginPage.properties");
 		FI = new FileInputStream(f);
 		Repository.load(FI);
 		
-		f = new File(System.getProperty("user.dir")+"\\src\\com\\actiTime\\pageLocators\\reportsPage.properties");
+		f = new File(System.getProperty("user.dir")+"\\src\\com\\PageLocators\\reportsPage.properties");
 		FI = new FileInputStream(f);
 		Repository.load(FI);
 		
-		f = new File(System.getProperty("user.dir")+"\\src\\com\\actiTime\\pageLocators\\timeTracks.properties");
+		f = new File(System.getProperty("user.dir")+"\\src\\com\\PageLocators\\timeTrack.properties");
 		FI = new FileInputStream(f);
 		Repository.load(FI);
 		
-		f = new File(System.getProperty("user.dir")+"\\src\\com\\actiTime\\pageLocators\\taskPage.properties");
+		f = new File(System.getProperty("user.dir")+"\\src\\com\\pageLocators\\taskPage.properties");
 		FI = new FileInputStream(f);
 		Repository.load(FI);
 		
@@ -127,7 +127,7 @@ public class TestBase extends Utills{
 	}
 	
 	public Object[][] getData(String ExcelName, String testcase) {
-		Data = new Xls_Reader(System.getProperty("user.dir") + "//src//com//actiTime//testData//"+ExcelName);
+		Data = new Xls_Reader(System.getProperty("user.dir") + "//src//com//testData//"+ExcelName);
 		int rowNum = Data.getRowCount(testcase);
 		System.out.println(rowNum);
 		int colNum = Data.getColumnCount(testcase);

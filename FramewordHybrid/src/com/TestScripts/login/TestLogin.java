@@ -23,7 +23,7 @@ public class TestLogin extends TestBase {
 	public void testLogin() throws Exception {
 
 		ExtentReports report = new ExtentReports(System.getProperty("user.dir")
-				+ "\\src\\com\\actiTime\\screenShot\\LoginTest.html");
+				+ "\\src\\com\\screenShot\\LoginTest.html");
 		ExtentTest logger = report.startTest("verify actime login");
 		logger.log(LogStatus.INFO, "Browser is up and running");
 		LoginPage login = new LoginPage();

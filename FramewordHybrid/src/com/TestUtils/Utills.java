@@ -28,16 +28,17 @@ public class Utills {
 	 */
 	public static WebDriver selectBrowser(String browser){
 		if (browser.equals("firefox") || browser.equals("FIREFOX")) {
-			driver = new FirefoxDriver();
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+ "\\src\\com\\BrowserDrivers\\geckodriver.exe");
 			driver.manage().window().maximize();
 			return driver;
 		} else if (browser.equals("chrome") || browser.equals("CHROME")) {
 			System.out.println("chrome browser");
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "\\src\\com\\actiTime\\BrowserDrivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "\\src\\com\\BrowserDrivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			return driver;
 		} else if (browser.equals("ie") || browser.equals("IE")) {
+			System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+ "\\src\\com\\BrowserDrivers\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 			driver.manage().window().maximize();
 			return driver;
