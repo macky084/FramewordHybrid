@@ -143,10 +143,10 @@ public class TC_001 extends TestBase{
 		driver.findElement(By.xpath("//*[@id='createTasksPopup_commitBtn']/div/span")).click();
 		driverwait(6);
 	}
-	
+/*	
 	@AfterClass
 	public void tearDown(){
 		closeBrowser();
-	}
+	}*/
 
 }

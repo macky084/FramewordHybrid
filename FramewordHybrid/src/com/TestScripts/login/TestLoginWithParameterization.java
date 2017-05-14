@@ -25,7 +25,7 @@ public class TestLoginWithParameterization extends TestBase{
 	// I have made method(getDate) in test base class by calling all methods from XLS_Reader class for ease to use.
 	@DataProvider
 	public  Object[][] Data() throws IOException {
-		return getData("Login.xlsx","Login");
+		return getData("actiLogin.xlsx","Login");
 	}
 
 	@BeforeClass
@@ -41,7 +41,7 @@ public class TestLoginWithParameterization extends TestBase{
 	 * @param runMode
 	 * @throws Exception 
 	 */
-	@Test(dataProvider = "Data")
+	@Test(dataProvider = "actiLogin")
 	public void loginWithParameterization(String TestName, String userName, String password,String runMode) throws Exception {
 		
 		if(runMode.equals("N")) {
@@ -55,9 +55,9 @@ public class TestLoginWithParameterization extends TestBase{
 		driverwait(1);
 	}
 
-	@AfterClass
-	public void closeBroser() {
-		driver.quit();
-
-	}
+//	@AfterClass
+//	public void closeBroser() {
+//		driver.quit();
+//
+//	}
 }

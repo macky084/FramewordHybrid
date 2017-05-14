@@ -128,7 +128,7 @@ public class TestBase extends Utills{
 	}
 	
 	public Object[][] getData(String ExcelName, String testcase) {
-		Data = new Xls_Reader(System.getProperty("user.dir") + "//src//com//testData//"+ExcelName);
+		Data = new Xls_Reader(System.getProperty("user.dir") + "//src//com//TestData//"+ExcelName);
 		int rowNum = Data.getRowCount(testcase);
 		System.out.println(rowNum);
 		int colNum = Data.getColumnCount(testcase);
